@@ -23,11 +23,11 @@
          <img class="imgUsuario"               
          src="http://www.igarapedomeio.ma.gov.br/site/images/sem_imagem.png" alt=""  >
      </div>
-     <div class="inputUsuario">
+     <form class="inputUsuario">
        
        <input type="text" id="username" placeholder="ZéCreycrey">
        
-     </div>
+     </form>
 
     </div> 
     
@@ -43,15 +43,20 @@
            <img class="imgSenha" 
            src="https://img.icons8.com/cotton/2x/unlock-2.png" alt="">
          </div>
-       <input type="text" id="Senha" placeholder="12345">
+
+        <form class="inputSenha">
+
+       <input type="password" id="Senha" placeholder="12345">
          
+        </form> 
+
        </div>  
        
      </div>
      
    </div>
 
-   <button class="loginButton" >INICIAR SESSÃO</button>
+   <button type="submit" class="loginButton" routerLink='/serviceDesk/menu'>INICIAR SESSÃO</button>
    
  </div>
  

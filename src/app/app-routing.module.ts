@@ -4,6 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'serviceDesk', pathMatch: 'full' },
   { path: 'serviceDesk', loadChildren: './service-desk/service-desk.module#ServiceDeskModule' },
+  
 ];
 
 @NgModule({
