@@ -3,9 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { ServiceDeskRoutingModule } from './service-desk-routing.module';
 import { GeralModule } from '../geral/geral.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    LoginComponent
+  ],
   imports: [
     ServiceDeskRoutingModule,
     GeralModule,
