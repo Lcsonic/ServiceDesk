@@ -1,40 +1,57 @@
 .topo{
-    width: 100%;
-    background-color: #303097;
-  }
-  
-  .infoRouter{
-    padding:10px 0px 0px 0px;
-    font-family:'Ubuntu';
-    font-size: 24px;
-    color:white;
-    margin: auto;
-    width: 100%;
-    min-height:50px;
-    max-width: 230px
-  }
+  width: 100%;
+  border: solid 3px;
+  background-color: #303097;
+}
 
-  .corpo{
-    padding: 0px 0px 0px 30px;
-  }
+.txtTopo{
   
-  .txtInfo{
-    padding: 10px 0px 0px 0px;
-    font-size: 20px;
-  }
-  
-  .txtTitulo{
-    
-  }
-  
-  .inputTitulo{
-    padding: 12px 0px 0px 10px;
-  }
-  
-  .inputTxt{
-    border:0;
-    border-bottom:2px solid #32CD32;
-    font-size:20px;
-    font-family:'Ubuntu';
-  
-  }
+  font-family:'Ubuntu';
+  font-size: 24px;
+  color:white;
+  margin: auto;
+  width: 100%;
+  min-height:50px;
+  max-width: 230px
+}
+
+.corpo{
+  margin:0px 0px 40em 30px;
+}
+
+.formulario{
+
+}
+
+.txtInfo{
+  margin:20px 0px 0em 10px;
+  font-family:'Ubuntu';
+  color: 	#606060;
+}
+
+.txtTitulo{
+ margin: 0px 0px 0px 0px
+}
+
+.inputTxt{
+  width: 90%;
+  margin:18px 0px 0em 00px;
+  border:0;
+  border-bottom:2px solid #32CD32;
+  font-size:20px;
+  font-family:'Ubuntu';
+}
+
+.inputTxtS{
+  width: 90%;
+  margin:6px 0px 0em 00px;
+  border:0;
+  border-bottom:2px solid #32CD32;
+  font-size:20px;
+  font-family:'Ubuntu';
+}
+
+.btn{
+  margin: 10px 0px 0px 0px;
+}
+

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceDeskService, Menu } from '../service-desk.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  menus: Menu[] = [];
+
+  constructor(
+    private service: ServiceDeskService,
+    ) { }
 
   ngOnInit() {}
 
+    listar(){
+      this.menus = this.service.getChamados();
+    }
+
 }
+
+
+

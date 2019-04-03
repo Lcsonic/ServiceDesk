@@ -1,6 +1,6 @@
 <div class="topo">
   
-  <div class="infoRouter">
+  <div class="txtTopo">
 
    Adicionar Chamado
 
@@ -15,16 +15,55 @@
   <div class="txtInfo">
     modelo
   </div>
-  
+
+  <form class="formulario" id="formulario" #frm="ngForm" (ngSubmit)="adicionar(frm)">  
+
   <div class="txtTitulo">
     
-    <form class="inputTitulo">
+    
       
-      <input class="inputTxt" type="text" id="titulo" placeholder="Titulo">
+        <input class="inputTxt" type="text" id="titulo" name="titulo" [(ngModel)]="menu.titulo" placeholder="Titulo">
       
-    </form>
     
     
+      
+        <input class="inputTxt" type="text" id="descricao" name="descricao" [(ngModel)]="menu.descricao" placeholder="Descrição">
+        
+    
+    <div class="txtInfo">
+        Prioridade
+    </div>
+
+   
+      
+        <input class="inputTxt" type="text" id="prioriade" name="prioridade" [(ngModel)]="menu.prioriade" placeholder="Baixa - Média - Urgente">
+        
+    
+
+    <div class="txtInfo">
+        Estado
+    </div>
+
+    
+      
+        <input class="inputTxt" type="text" id="estado" name="estado" [(ngModel)]="menu.estado" placeholder=" Aberto - Solucionado">
+        
+  
   </div>
+
+  <div class="btn">
+      <button class="btn1" type="submit" onclick="alert('Chamada adicionada com sucesso!')">Adicionar</button>
+      
+  </div>
+
+  <div class="btn">
+      <button class="btn2" routerLink="/serviceDesk/menu">Cancelar</button>
+        
+  </div>
+
+</form>
+
   
 </div>
+
+

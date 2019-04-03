@@ -8,6 +8,10 @@
   
 </div>
 
+ <app-card *ngFor="let menus of menus" [titulo]="menus.titulo" [descricao]="menus.descricao"
+   [prioridade]="menus.prioridade"[estado]="menus.estado"></app-card>
+
+
 <button class="btnAdd" type="button" routerLink='adicionar'>
   +
 </button>
